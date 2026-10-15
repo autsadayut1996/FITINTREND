@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f0f0f;
+  --foreground: #f5f5f5;
+  --accent: #22c55e;
+  --accent-dark: #16a34a;
+  --card: #1a1a1a;
+  --card-border: #2a2a2a;
+  --muted: #6b7280;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-primary:hover { background: var(--accent-dark); }
+
+.btn-secondary {
+  background: #2a2a2a;
+  color: #d1d5db;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: 1px solid #3a3a3a;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-secondary:hover { background: #3a3a3a; }
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  padding: 0.375rem 0.875rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.input {
+  background: #111;
+  border: 1px solid #333;
+  color: #f5f5f5;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.input:focus { outline: none; border-color: var(--accent); }
+
+.label {
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+.badge-green { background: #14532d; color: #4ade80; }
+.badge-blue { background: #1e3a5f; color: #60a5fa; }
+.badge-orange { background: #431407; color: #fb923c; }
+.badge-gray { background: #1f2937; color: #9ca3af; }
+.badge-purple { background: #3b0764; color: #c084fc; }
+
+.session-morning { border-left: 3px solid #f59e0b; padding-left: 0.75rem; }
+.session-noon { border-left: 3px solid #3b82f6; padding-left: 0.75rem; }
+.session-evening { border-left: 3px solid #8b5cf6; padding-left: 0.75rem; }
+
+.meal-breakfast { border-left: 3px solid #f59e0b; padding-left: 0.75rem; }
+.meal-lunch { border-left: 3px solid #22c55e; padding-left: 0.75rem; }
+.meal-dinner { border-left: 3px solid #6366f1; padding-left: 0.75rem; }
+.meal-snack { border-left: 3px solid #ec4899; padding-left: 0.75rem; }
